@@ -7,7 +7,7 @@ const Navbar = async () => {
   const session = await auth();
   return (
     <header className='px-5 py-3 bg-white shadow-sm font-work-sans'>
-      <nav className="flex justify-between items-center">
+      <nav className='flex justify-between items-center'>
         <Link href={"/"}>
           <Image src={"/speedKomp.png"} alt='logo' width={150} height={150} />
         </Link>
@@ -20,7 +20,7 @@ const Navbar = async () => {
               <form
                 action={async () => {
                   "use server";
-                  await signOut();
+                  await signOut({ redirectTo: "/" });
                 }}
               >
                 <button type='submit'>Log out</button>
