@@ -7,6 +7,7 @@ export default {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./sanity/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -23,13 +24,14 @@ export default {
           "100": "#33333",
           "200": "#141413",
           "300": "#7D8087",
-          DEFAULT: "#00000",
+          DEFAULT: "#000",
         },
         white: {
           "100": "#F7F7F7",
           DEFAULT: "#FFF",
         },
       },
+
       fontFamily: {
         "work-sans": ["var(--font-work-sans)"],
       },
