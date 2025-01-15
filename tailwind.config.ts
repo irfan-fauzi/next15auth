@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -21,17 +21,16 @@ export default {
         },
         secondary: "#FBE843",
         black: {
-          "100": "#33333",
+          "100": "#333333",
           "200": "#141413",
           "300": "#7D8087",
-          DEFAULT: "#000",
+          DEFAULT: "#000000",
         },
         white: {
           "100": "#F7F7F7",
-          DEFAULT: "#FFF",
+          DEFAULT: "#FFFFFF",
         },
       },
-
       fontFamily: {
         "work-sans": ["var(--font-work-sans)"],
       },
@@ -48,4 +47,6 @@ export default {
     },
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
-} satisfies Config;
+};
+
+export default config;
